@@ -14,7 +14,7 @@ module my_chip (
     assign data_in = {4'b0000, io_in[7:0]};  
     assign go = io_in[8]; 
     assign finish = io_in[9];  
-    RangeFinder #(.WIDTH(16)) rf_inst (
+    rangefinder #(.WIDTH(16)) rf_inst (
         .clock(clock),
         .reset(reset),
         .go(go),
