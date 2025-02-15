@@ -27,8 +27,4 @@ module my_chip (
         .debug_error(debug_error)
     );
 
-    assign io_out[7:0] = range[7:0];  
-    assign io_out[8] = debug_error;   
-    assign io_out[11:9] = 3'b000;    
-
 endmodule
