@@ -4,6 +4,7 @@ project:
     - toplevel_chip.v
     - chip.sv
     - decoder.v
+    - rangefinder.v
   top_module:  "toplevel_chip"
 
 # As everyone will have access to all designs, try to make it easy for someone new to your design to know what
@@ -13,18 +14,18 @@ project:
 #
 # This info will be automatically collected and used to make a datasheet for the chip.
 documentation: 
-  author:       "PLACEHOLDER"      # Your name
-  discord:      ""      # Your discord handle
-  title:        "PLACEHOLDER"      # Project title
-  description:  "PLACEHOLDER"      # Short description of what your project does
-  how_it_works: "PLACEHOLDER"      # Longer description of how the project works
-  how_to_test:  "PLACEHOLDER"      # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
-  external_hw:  "PLACEHOLDER"      # Describe any external hardware needed
-  language:     "verilog" # other examples include Verilog, Amaranth, VHDL, etc
-  doc_link:     ""      # URL to longer form documentation, eg the README.md in your repository
-  clock_hz:     1000       # Clock frequency in Hz (if required)
-  picture:      ""      # relative path to a picture in your repository
-  inputs:               # a description of what the inputs do
+  author:       Raveena Gupta
+  discord:      N/A
+  title:        RangeFinder     
+  description:  Finds the range between two numbers     
+  how_it_works: Subtracts two numbers with GO is asserted     
+  how_to_test:  Assert go, input the two numbers, and see the difference output
+  external_hw:  NA
+  language:     "verilog" 
+  doc_link:     ""      
+  clock_hz:     1000       
+  picture:      ""      
+  inputs:             
     - none
     - none
     - none
