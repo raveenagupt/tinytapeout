@@ -1,4 +1,4 @@
-module RangeFinder
+module rangefinder
     #(parameter WIDTH=16)
     (input logic [WIDTH-1:0] data_in,
     input logic clock,reset,
